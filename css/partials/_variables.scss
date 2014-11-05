@@ -23,16 +23,31 @@ $container-md-width:800px;
 $container-lg-width:1000px;
 $container-xl-width:1200px;
 
-$color-red: #e11;
-$color-warning: $color-red;
-$color-yellow: rgb(240,240,40);
-$color-alert: $color-yellow;
-$color-blue: #03c;
-$color-hero: $color-blue;
-$color-green: #00FF00;
-$color-confirm: $color-green;
-
+//colors
+$white: #fff;
+$seashell: rgb(241,241,241);
+$color_slate_gray_30_approx: rgba(118,134,147,.3);
+$color_celeste_approx: rgb(204,204,204);
+$color_cinnabar_approx: rgb(239, 70, 59);
+$color_oslo_gray_approx: rgb(130,140,149);
+$color_ironside_gray_approx: rgb(102,103,102);
+$color_rangoon_green_approx: rgb(30,25,27);
+$color_cinnabar_20_approx: rgba(239, 70, 59, .2);
+$color_gold_approx: #fcd700;
+$black: #000;
 $color-grey-light:#eee;
+
+
+//fonts
+$font_0: tablet-gothic;
+$font_1: Trade Gothic;
+$font_2: sans-serif;
+
+//images
+$splash-background: url('../img/woodbgb.jpg');
+$web-background: url('../img/percolate_ad2.jpg');
+$campaign-background: url('../img/percolate_ad.jpg');
+$print-background: url('../img/percolate_ad_print3.png');
 
 
 @mixin make-font-face($font-name,$font-src,$font-format:'ttf') {
@@ -64,6 +79,8 @@ $color_rangoon_green_approx: rgb(30,25,27);
 $color_cinnabar_20_approx: rgba(239, 70, 59, .2);
 $color_gold_approx: #fcd700;
 $black: #000;
+
+
 
 //fonts
 $font_0: tablet-gothic;

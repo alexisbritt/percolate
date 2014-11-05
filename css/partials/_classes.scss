@@ -29,7 +29,7 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
-	color: $color-red;
+	color: $color-grey-light;
 }
 select {
 	color: $color_oslo_gray_approx;
@@ -65,17 +65,17 @@ mark {
 	a {
 		display:block;
 		background-color:transparent;
-		color:$color-hero;
+		color:$color-grey-light;
 	}
 	a:hover, .active a {
 		color:white;
 		text-decoration:none;
 	}
 	a:hover {
-		background-color: lighten($color-hero, 20%);
+		background-color: lighten($color-grey-light, 20%);
 	}
 	.active a {
-		background-color: $color-hero;
+		background-color: $color-grey-light;
 	}
 }
 

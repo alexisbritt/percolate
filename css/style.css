@@ -42,6 +42,9 @@ table {
 input, textarea, td, th, tr, table {
   font: inherit; }
 
+img {
+  max-width: 100%; }
+
 /* .container {
 	width: $container-xl-width;
 	@include center-in-parent;
@@ -63,7 +66,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
-  color: #e11; }
+  color: #eee; }
 
 select {
   color: #828c95; }
@@ -88,14 +91,14 @@ mark {
 .nav a {
   display: block;
   background-color: transparent;
-  color: #03c; }
+  color: #eee; }
 .nav a:hover, .nav .active a {
   color: white;
   text-decoration: none; }
 .nav a:hover {
-  background-color: #3366ff; }
+  background-color: white; }
 .nav .active a {
-  background-color: #03c; }
+  background-color: #eee; }
 
 .btn {
   background-color: repeating-linear-gradient(45deg, #778105, #816c05 10px, #bdcd07 10px, #bdcd07 20px);
@@ -134,9 +137,13 @@ mark {
 .margin-zero {
   margin: 0 auto; }
 
-.section-padding {
+.four-padding {
   padding-top: 4em;
   padding-bottom: 4em; }
+
+.six-padding {
+  padding-top: 6em;
+  padding-bottom: 6em; }
 
 .half-padding {
   padding-top: 1.45em;
@@ -738,9 +745,27 @@ body.single article div.big p:before, body.single article div.big p:after {
   overflow: hidden; }
 
 @font-face {
+  font-family: Novecento Wide Bold;
+  src: url("../fonts/novecento_wide/novecentowide-bold-webfont.eot");
+  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-bold-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-bold-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-bold-webfont.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: Nexa Slab Light;
-  src: url("../assets/fonts/nexa-slab/light/nexa-slab-light.eot");
-  src: url("../assets/fonts/nexa-slab/light/nexa-slab-light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.woff") format("woff"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.ttf") format("truetype"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.svg#ywftsvg") format("svg");
+  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot");
+  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.woff") format("woff"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.ttf") format("truetype"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Novecento Wide Demibold;
+  src: url("../fonts/novecento_wide/novecentowide-demibold-webfont.eot");
+  src: url("../fonts/novecento_wide/novecentowide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: tablet-gothic;
+  src: url("../fonts/novecento_wide/novecentowide-light-webfont.eot");
+  src: url("../fonts/novecento_wide/novecentowide-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-light-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-light-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-light-webfont.svg#ywftsvg") format("svg");
   font-weight: normal;
   font-style: normal; }
 a {
@@ -758,7 +783,7 @@ a {
     top: 2px; }
   a.more-info {
     background: #f1f1f1;
-    font-family: Nexa Slab Light, serif;
+    font-family: Nexa Slab Light;
     text-align: center;
     display: block;
     padding: 8px 0;
@@ -774,7 +799,7 @@ html {
   font-size: 90%; }
 
 body {
-  font-family: tablet-gothic, Trade Gothic, sans-serif;
+  font-family: Nexa Slab Light;
   font-size: 1.7rem;
   line-height: 3rem;
   font-weight: normal;
@@ -814,7 +839,7 @@ mark {
 h1 {
   width: 250px; }
   h1 a {
-    font-family: Nexa Slab Light, serif;
+    font-family: Nexa Slab Light;
     font-size: 2rem;
     margin-bottom: 15px;
     color: #ef463b;
@@ -835,7 +860,6 @@ h2 {
     font-style: italic; }
 
 h3 {
-  border-bottom: 1px solid #f1f1f1;
   margin-bottom: 1rem;
   font-size: 1.2rem;
   line-height: 1.7rem;
@@ -843,7 +867,7 @@ h3 {
 
 p {
   margin-bottom: 2em;
-  font-family: tablet-gothic, Trade Gothic, sans-serif;
+  font-family: Nexa Slab Light;
   font-weight: 300;
   font-size: 1em;
   line-height: 1.5em; }
@@ -852,7 +876,7 @@ h5 {
   font-size: .5em; }
 
 header[role="banner"] {
-  font-family: tablet-gothic, Trade Gothic, sans-serif;
+  font-family: Nexa Slab Light;
   padding-top: 20px;
   width: 100%;
   color: #fff;
@@ -875,12 +899,13 @@ header h1 {
   margin-left: 20px; }
 
 nav[role="navigation"] a {
+  font-family: Novecento Wide Demibold;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 0.5rem;
   color: #cccccc;
-  padding-bottom: 0.02rem; }
+  padding-bottom: 0.02em; }
   nav[role="navigation"] a:hover {
     color: #ef463b;
     text-decoration: none; }
@@ -962,20 +987,20 @@ article div.big footer.top {
 .recent {
   width: 73%;
   color: #ef463b;
-  font-family: Nexa Slab Bold, serif;
+  font-family: Nexa Slab Light;
   letter-spacing: 2px;
   font-size: 1.25em;
   text-transform: uppercase; }
 
 #return {
-  font-family: tablet-gothic, Trade Gothic, sans-serif;
+  font-family: Nexa Slab Light;
   font-size: .65em;
   color: rgba(204, 204, 204, 0.1); }
 
 #bio {
   margin-top: 2em; }
   #bio h3 {
-    font-family: Nexa Slab Light, serif;
+    font-family: Novecento Wide Bold;
     font-size: 1.5em;
     color: #ef463b;
     border-bottom: none; }
@@ -985,7 +1010,7 @@ article div.big footer.top {
 #socialMedia {
   margin-top: 2em; }
   #socialMedia h3 {
-    font-family: Nexa Slab Light, serif;
+    font-family: Novecento Wide Bold;
     font-size: 1em;
     color: #ef463b;
     border-bottom: none; }
@@ -1009,37 +1034,64 @@ article div.big footer.top {
     margin-top: -325px;
     z-index: 1000;
     width: 60%;
-    font-family: Nexa Slab Bold, serif;
+    font-family: Nexa Slab Light, serif;
     color: #ef463b;
     font-size: 2em;
     line-height: 1.5em; }
 
+#description {
+  position: relative;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.8); }
+  #description h2 {
+    font-family: Novecento Wide Demibold, serif;
+    color: #ef463b;
+    font-size: 1.75em; }
+
 .brief h3 {
-  font-family: Nexa Slab Light, serif;
+  font-family: Novecento Wide Bold, serif;
   font-size: 1.25em;
   color: #ef463b; }
 .brief p {
   font-family: tablet-gothic, Trade Gothic, sans-serif;
   font-size: .7em; }
 
+#components {
+  position: relative;
+  width: 100%;
+  padding-top: 10em;
+  opacity: 0.95; }
+  #components h3 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Novecento Wide Demibold;
+    font-size: 2em; }
+
 #web {
   position: relative;
-  background-color: #000; }
+  background-image: url("../img/percolate_ad2.jpg");
+  background-size: cover; }
 
 #campaign {
   position: relative;
-  background-color: #000; }
+  background-image: url("../img/percolate_ad.jpg");
+  background-size: cover; }
 
 #print {
   position: relative;
-  background-color: #000; }
+  background-image: url("../img/percolate_ad_print3.png");
+  background-size: cover; }
+
+#quote {
+  position: relative;
+  background-color: #1c2f42; }
 
 footer#dropdown {
   display: none;
   background: rgba(51, 153, 102, 0.1);
   padding-top: 10px; }
   footer#dropdown h2 {
-    font-family: Nexa Slab Regular Italic, Minion Pro, Georgia, serif;
+    font-family: Novecento Wide Demibold, Minion Pro, Georgia, serif;
     color: #fefefe;
     font-size: 2rem;
     line-height: 3rem;
@@ -1070,17 +1122,64 @@ footer.single-top {
 #social {
   height: 200px; }
 
-#quote {
-  background-color: #339966;
+#process {
   color: #FFF;
-  display: inline-block; }
-  #quote h3 {
-    border-bottom: 0;
-    margin-top: 10px; }
-  #quote a {
-    color: #FFF; }
-    #quote a:hover {
-      color: #339966; }
+  text-decoration: none;
+  opacity: 0.9; }
+
+#process-title {
+  background-color: #1c2f42;
+  color: #FFF;
+  font-family: Novecento Wide Bold; }
+  #process-title h3 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Novecento Wide Demibold;
+    font-size: 2em; }
+
+#moodboards {
+  background-color: #999933;
+  color: #FFF; }
+  #moodboards h3 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: tablet-gothic;
+    font-size: 1em; }
+
+#word {
+  background-color: rgba(31, 17, 0, 0.6);
+  color: #FFF; }
+  #word h3 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: tablet-gothic;
+    font-size: 1em; }
+
+#personas {
+  background-color: #999933; }
+  #personas h3 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: tablet-gothic;
+    font-size: 1em; }
+
+#storyboards {
+  background-color: rgba(31, 17, 0, 0.6);
+  color: #FFF; }
+  #storyboards h3 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: tablet-gothic;
+    font-size: 1em; }
+
+#sketches {
+  background-color: #1c2f42;
+  color: #FFF; }
+  #sketches h3 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: tablet-gothic;
+    font-size: 1em; }
 
 #prompt {
   background-color: #768693;
@@ -1102,7 +1201,7 @@ footer.single-top {
   color: #FFF; }
   #rights h4 {
     font-size: .6em;
-    font-family: Nexa Slab Bold, serif;
+    font-family: Nexa Slab Light, serif;
     font-weight: 500; }
 
 @media screen and (max-width: 1280px) {
@@ -1371,9 +1470,9 @@ footer.single-top {
     font-size: 2em; }
 
   h3#socialMedia {
-    font-family: Nexa Slab Bold; }
+    font-family: Nexa Slab Light; }
   h3#bio {
-    font-family: Nexa Slab Bold; }
+    font-family: Nexa Slab Light; }
 
   #splash {
     display: none; }
