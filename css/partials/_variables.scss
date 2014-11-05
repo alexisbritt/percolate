@@ -24,24 +24,41 @@ $container-lg-width:1000px;
 $container-xl-width:1200px;
 
 //colors
-$white: #fff;
-$seashell: rgb(241,241,241);
-$color_slate_gray_30_approx: rgba(118,134,147,.3);
-$color_celeste_approx: rgb(204,204,204);
+
 $color_cinnabar_approx: rgb(239, 70, 59);
 $color_oslo_gray_approx: rgb(130,140,149);
 $color_ironside_gray_approx: rgb(102,103,102);
 $color_rangoon_green_approx: rgb(30,25,27);
 $color_cinnabar_20_approx: rgba(239, 70, 59, .2);
+$white: #fff;
 $color_gold_approx: #fcd700;
 $black: #000;
+$color_mine_shaft_approx: rgb(51,51,51);
+$color_slate_gray_approx: rgb(118,134,147);
+$seashell: rgb(241,241,241);
+$color_slate_gray_30_approx: rgba(118,134,147,.3);
+$color_celeste_approx: rgb(204,204,204);
+$color_storm_dust_approx: #666;
+$color_celeste_10_approx: rgba(204, 204, 204, .1);
+$color_mountain_mist_approx: rgb(153,153,153);
+$color_chateau_green_10_approx: rgba(51, 153, 102, .1);
+$color_romance_approx: rgb(254, 254, 254);
+$color_chateau_green_40_approx: rgba(51, 153, 102, .4);
+$color_chateau_green_approx: rgb(51, 153, 102);
+$color_neon_carrot_approx: rgb(255, 153, 51);
 $color-grey-light:#eee;
 
 
 //fonts
-$font_0: tablet-gothic;
-$font_1: Trade Gothic;
-$font_2: sans-serif;
+$font_1: Nexa Slab Light;
+$font_0: Novecento Wide Bold;
+$font_2: Novecento Wide Demibold;
+$font_3: tablet-gothic;
+$font_4: Sentinel Medium;
+$font_5: sans-serif;
+$font_6: serif;
+$font_7: Minion Pro;
+$font_8: Georgia;
 
 //images
 $splash-background: url('../img/woodbgb.jpg');

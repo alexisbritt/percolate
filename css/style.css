@@ -113,6 +113,12 @@ mark {
   .btn:active {
     top: 2px; }
 
+.cover {
+  background: url("../img/woodbgb.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: auto; }
+
 .align-left {
   float: left; }
 
@@ -148,6 +154,136 @@ mark {
 .half-padding {
   padding-top: 1.45em;
   padding-bottom: 1.45em; }
+
+@font-face {
+  font-family: Novecento Wide Bold;
+  src: url("../fonts/novecento_wide/novecentowide-bold-webfont.eot");
+  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-bold-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-bold-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-bold-webfont.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Nexa Slab Light;
+  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot");
+  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.woff") format("woff"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.ttf") format("truetype"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Novecento Wide Demibold;
+  src: url("../fonts/novecento_wide/novecentowide-demibold-webfont.eot");
+  src: url("../fonts/novecento_wide/novecentowide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: tablet-gothic;
+  src: url("../fonts/novecento_wide/novecentowide-light-webfont.eot");
+  src: url("../fonts/novecento_wide/novecentowide-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-light-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-light-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-light-webfont.svg#ywftsvg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Sentinel Medium;
+  src: url("../fonts/Sentinel-Medium.oft");
+  font-weight: normal;
+  font-style: normal; }
+a {
+  text-decoration: none;
+  line-height: inherit;
+  color: #666766;
+  text-decoration: none;
+  position: relative; }
+  a:visited {
+    text-decoration: none;
+    line-height: inherit; }
+  a:hover {
+    color: #1e191b; }
+  a:active {
+    top: 2px; }
+  a.more-info {
+    background: #f1f1f1;
+    font-family: Nexa Slab Light;
+    text-align: center;
+    display: block;
+    padding: 8px 0;
+    text-transform: uppercase; }
+
+html {
+  font-size: 90%; }
+
+body {
+  font-family: Nexa Slab Light;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  color: #828c95; }
+  body.single div.big img {
+    margin-bottom: 10px; }
+    body.single div.big img.center {
+      margin: 0 96px; }
+  body.single article div.big p {
+    zoom: 1;
+    margin-bottom: 0; }
+    body.single article div.big p:after {
+      clear: both; }
+
+select {
+  color: #828c95; }
+
+input {
+  color: #828c95; }
+
+textarea {
+  color: #828c95; }
+
+ins {
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+h1 {
+  width: 250px; }
+  h1 a {
+    font-family: Nexa Slab Light;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ef463b;
+    font-weight: 200;
+    letter-spacing: .1rem; }
+    h1 a:hover {
+      color: #333333;
+      text-decoration: none; }
+
+h2 {
+  color: #1e191b;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+  padding: 1rem 0 3rem; }
+  h2 a {
+    color: #768693;
+    font-style: italic; }
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: 400; }
+
+p {
+  margin-bottom: 2em;
+  font-family: Nexa Slab Light;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em; }
+
+h5 {
+  font-size: .5em; }
 
 header[role="banner"] {
   padding-top: 73px;
@@ -744,137 +880,6 @@ body.single article div.big p:before, body.single article div.big p:after {
   height: 0;
   overflow: hidden; }
 
-@font-face {
-  font-family: Novecento Wide Bold;
-  src: url("../fonts/novecento_wide/novecentowide-bold-webfont.eot");
-  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-bold-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-bold-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-bold-webfont.svg#ywftsvg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: Nexa Slab Light;
-  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot");
-  src: url("../fonts/nexa-slab/light/nexa-slab-light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.woff") format("woff"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.ttf") format("truetype"), url("../assets/fonts/nexa-slab/light/nexa-slab-light.svg#ywftsvg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: Novecento Wide Demibold;
-  src: url("../fonts/novecento_wide/novecentowide-demibold-webfont.eot");
-  src: url("../fonts/novecento_wide/novecentowide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-demibold-webfont.svg#ywftsvg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: tablet-gothic;
-  src: url("../fonts/novecento_wide/novecentowide-light-webfont.eot");
-  src: url("../fonts/novecento_wide/novecentowide-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento_wide/novecentowide-light-webfont.woff") format("woff"), url("../fonts/novecento_wide/novecentowide-light-webfont.ttf") format("truetype"), url("../fonts/novecento_wide/novecentowide-light-webfont.svg#ywftsvg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-a {
-  text-decoration: none;
-  line-height: inherit;
-  color: #666766;
-  text-decoration: none;
-  position: relative; }
-  a:visited {
-    text-decoration: none;
-    line-height: inherit; }
-  a:hover {
-    color: #1e191b; }
-  a:active {
-    top: 2px; }
-  a.more-info {
-    background: #f1f1f1;
-    font-family: Nexa Slab Light;
-    text-align: center;
-    display: block;
-    padding: 8px 0;
-    text-transform: uppercase; }
-
-.cover {
-  background: url("../img/woodbgb.jpg") no-repeat center center fixed;
-  background-size: cover;
-  width: 100%;
-  height: auto; }
-
-html {
-  font-size: 90%; }
-
-body {
-  font-family: Nexa Slab Light;
-  font-size: 1.7rem;
-  line-height: 3rem;
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  color: #828c95; }
-  body.single div.big img {
-    margin-bottom: 10px; }
-    body.single div.big img.center {
-      margin: 0 96px; }
-  body.single article div.big p {
-    zoom: 1;
-    margin-bottom: 0; }
-    body.single article div.big p:after {
-      clear: both; }
-
-select {
-  color: #828c95; }
-
-input {
-  color: #828c95; }
-
-textarea {
-  color: #828c95; }
-
-ins {
-  background-color: #fcd700;
-  color: #000;
-  text-decoration: none; }
-
-mark {
-  background-color: #fcd700;
-  color: #000;
-  font-style: italic;
-  font-weight: bold; }
-
-h1 {
-  width: 250px; }
-  h1 a {
-    font-family: Nexa Slab Light;
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #ef463b;
-    font-weight: 200;
-    letter-spacing: .1rem; }
-    h1 a:hover {
-      color: #333333;
-      text-decoration: none; }
-
-h2 {
-  color: #1e191b;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
-  font-weight: 400;
-  padding: 1rem 0 3rem; }
-  h2 a {
-    color: #768693;
-    font-style: italic; }
-
-h3 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  font-weight: 400; }
-
-p {
-  margin-bottom: 2em;
-  font-family: Nexa Slab Light;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 1.5em; }
-
-h5 {
-  font-size: .5em; }
-
 header[role="banner"] {
   font-family: Nexa Slab Light;
   padding-top: 20px;
@@ -1047,13 +1052,16 @@ article div.big footer.top {
     font-family: Novecento Wide Demibold, serif;
     color: #ef463b;
     font-size: 1.75em; }
+  #description p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; }
 
 .brief h3 {
   font-family: Novecento Wide Bold, serif;
   font-size: 1.25em;
   color: #ef463b; }
 .brief p {
-  font-family: tablet-gothic, Trade Gothic, sans-serif;
+  font-family: tablet-gothic, Sentinel Medium, sans-serif;
   font-size: .7em; }
 
 #components {
@@ -1083,8 +1091,18 @@ article div.big footer.top {
   background-size: cover; }
 
 #quote {
-  position: relative;
-  background-color: #1c2f42; }
+  background-color: #1c2f42;
+  color: #FFF;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+  #quote h3 {
+    border-bottom: 0;
+    margin-top: 10px; }
+  #quote a {
+    color: #FFF; }
+    #quote a:hover {
+      color: #eee; }
 
 footer#dropdown {
   display: none;
@@ -1102,7 +1120,7 @@ footer#dropdown {
   footer#dropdown a {
     font-style: italic; }
     footer#dropdown a#close {
-      font-family: tablet-gothic, Trade Gothic, sans-serif;
+      font-family: tablet-gothic, Sentinel Medium, sans-serif;
       font-size: 1rem;
       display: block;
       padding: 1.5rem 0 .7rem;
@@ -1145,6 +1163,9 @@ footer.single-top {
     color: rgba(255, 255, 255, 0.9);
     font-family: tablet-gothic;
     font-size: 1em; }
+  #moodboards h3:hover {
+    font-family: Novecento Wide Demibold;
+    letter-spacing: .05em; }
 
 #word {
   background-color: rgba(31, 17, 0, 0.6);
@@ -1154,6 +1175,9 @@ footer.single-top {
     color: rgba(255, 255, 255, 0.9);
     font-family: tablet-gothic;
     font-size: 1em; }
+  #word h3:hover {
+    font-family: Novecento Wide Demibold;
+    letter-spacing: .05em; }
 
 #personas {
   background-color: #999933; }
@@ -1162,6 +1186,9 @@ footer.single-top {
     color: rgba(255, 255, 255, 0.9);
     font-family: tablet-gothic;
     font-size: 1em; }
+  #personas h3:hover {
+    font-family: Novecento Wide Demibold;
+    letter-spacing: .05em; }
 
 #storyboards {
   background-color: rgba(31, 17, 0, 0.6);
@@ -1171,6 +1198,9 @@ footer.single-top {
     color: rgba(255, 255, 255, 0.9);
     font-family: tablet-gothic;
     font-size: 1em; }
+  #storyboards h3:hover {
+    font-family: Novecento Wide Demibold;
+    letter-spacing: .05em; }
 
 #sketches {
   background-color: #1c2f42;
@@ -1180,9 +1210,12 @@ footer.single-top {
     color: rgba(255, 255, 255, 0.9);
     font-family: tablet-gothic;
     font-size: 1em; }
+  #sketches h3:hover {
+    font-family: Novecento Wide Demibold;
+    letter-spacing: .05em; }
 
 #prompt {
-  background-color: #768693;
+  background-color: rgba(31, 17, 0, 0.6);
   color: #FFF;
   display: inline-block;
   margin-left: auto;
@@ -1193,7 +1226,7 @@ footer.single-top {
   #prompt a {
     color: #FFF; }
     #prompt a:hover {
-      color: #ef463b; }
+      color: #fdf4d2; }
 
 #rights {
   background-color: #ef463b;
@@ -1295,8 +1328,6 @@ footer.single-top {
     float: none; }
 
   .align-right {
-    width: 80%;
-    margin: 15px auto 0;
     float: none; }
 
   h2 {
@@ -1398,7 +1429,6 @@ footer.single-top {
     padding-top: 22px; }
 
   .small.align-right {
-    width: 80%;
     margin: 15px auto 0;
     float: none; }
 
