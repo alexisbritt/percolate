@@ -1,0 +1,56 @@
+header[role="banner"] {
+	//font-family: $font_name;
+	padding-top: 73px;
+	width: 100%;
+	color: $color-grey-light;
+	height: 140px;
+	//Instead of the line below you could use @includebox-sizing($bs)
+	box-sizing: border-box;
+	border-bottom: 1px solid $seashell;
+	border-top: 5px solid $color_slate_gray_30_approx;
+	font-size: 16px;
+	font-size: 1.3rem;
+	line-height: 20px;
+	line-height: .8rem;
+	letter-spacing: 1px;
+	position: relative;
+}
+header {
+	img {
+		margin-top: -73px;
+		float: left;
+	}
+	h1 {
+		margin-left: 20px;
+	}
+}
+nav[role="navigation"] {
+	a {
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 1rem;
+		line-height: 1.3rem;
+		color: $color_celeste_approx;
+		padding-bottom: .2rem;
+		&:hover {
+			color: $color_cinnabar_approx;
+			text-decoration: none;
+		}
+		&:focus {
+			color: $color_cinnabar_approx;
+			text-decoration: none;
+		}
+	}
+	ul li {
+		float: left;
+		padding: 0 15px;
+		margin-bottom: 10px;
+		&:last-of-type {
+			padding: 0 0 0 15px;
+		}
+	}
+	li.current_page_item a {
+		color: $color_cinnabar_approx;
+		text-decoration: none;
+	}
+}
